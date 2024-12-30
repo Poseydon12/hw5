@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h2>1. Вибір напою</h2>
+    <select id="drinkSelect">
+        <option value="">Оберіть напій</option>
+        <option value="Кава">Кава</option>
+        <option value="Чай">Чай</option>
+        <option value="Сік">Сік</option>
+    </select>
+    <button onclick="showDrinkMessage()">Показати повідомлення</button>
+
+    <h2>2. Перевірка дня тижня</h2>
+    <input type="text" id="dayInput" placeholder="Введіть день тижня">
+    <button onclick="checkDay()">Перевірити</button>
+
+    <h2>3. Пора року за номером місяця</h2>
+    <input type="number" id="monthInput" min="1" max="12" placeholder="Введіть номер місяця">
+    <button onclick="checkSeason()">Перевірити пору року</button>
+
+    <h2>4. Кількість днів у місяці</h2>
+    <input type="number" id="daysInput" min="1" max="12" placeholder="Введіть номер місяця">
+    <button onclick="checkDaysInMonth()">Перевірити кількість днів</button>
+
+    <h2>5. Дія за кольором</h2>
+    <input type="text" id="colorInput" placeholder="Введіть колір">
+    <button onclick="checkColor()">Перевірити дію</button>
+
+    <h2>6. Калькулятор</h2>
+    <input type="number" id="num1" placeholder="Перше число">
+    <input type="number" id="num2" placeholder="Друге число">
+    <select id="operationSelect">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+    </select>
+    <button onclick="calculate()">Обчислити</button>
+    <script src="./js/script.js"></script>
+</body>
+</html>
